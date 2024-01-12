@@ -7,7 +7,7 @@ import { Fragment } from "react";
 
 function Navigation() {
   const router = useRouter();
-  const [user, loading] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   const LoginBtnHandler = () => {
     if (user) {
